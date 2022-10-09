@@ -9,7 +9,7 @@
 
                 <div class="panel-body">
                     <a class="btn btn-danger btn-lg btn-block" href="{{ route('schools.index') }}" role="button">
-                        @lang('Manage Schools')
+                        @lang('Administrar escuelas')
                     </a>
                 </div>
             </div>

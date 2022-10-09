@@ -8,8 +8,8 @@
             <div class="panel panel-default">
                 <div class="panel-body table-responsive">
                     @include('schools.form')
-                    <h2>@lang('School List')</h2>
-                    <h4>@lang('Manage Departments, Classs, Sections, Student Promotion, Course')</h4>
+                    <h2>@lang('Lista de escuelas')</h2>
+                    <h4>@lang('Administrar Departamentos, Clases, Secciones, Promoción de Estudiantes, Cursos')</h4>
                     <table class="table table-condensed">
                         <thead>
                             <tr>
@@ -17,9 +17,9 @@
                                 <th scope="col">@lang('Name')</th>
                                 <th scope="col">@lang('Code')</th>
                                 <th scope="col">@lang('About')</th>
-                                <th scope="col">@lang('Edit')</th>
-                                <th scope="col">+@lang('Admin')</th>
-                                <th scope="col">@lang('View Admins')</th>
+                                <th scope="col">@lang('Editar')</th>
+                                <th scope="col">+@lang('Administradores')</th>
+                                <th scope="col">@lang('Ver Administradores')</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -31,17 +31,17 @@
                                     <td><small>{{$school->about}}</small></td>
                                     <td>
                                         <a class="btn btn-success btn-sm" role="button" href="{{ route('schools.edit', $school) }}" dusk="edit-school-link">
-                                            <small>@lang('Edit School')</small>
+                                            <small>@lang('Editar escuela')</small>
                                         </a>
                                     </td>
                                     <td>
                                         <a class="btn btn-danger btn-sm" role="button" href="{{url('register/admin/'.$school->id.'/'.$school->code)}}">
-                                            <small>+ @lang('Create Admin')</small>
+                                            <small>+ @lang('Crear Admin')</small>
                                         </a>
                                     </td>
                                     <td>
                                         <a class="btn btn-success btn-sm" role="button" href="{{url('school/admin-list/'.$school->id)}}">
-                                            <small>@lang('View Admins')</small>
+                                            <small>@lang('Ver Administradores')</small>
                                         </a>
                                     </td>
                                 </tr>

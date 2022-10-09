@@ -1,5 +1,5 @@
 <button class="btn btn-primary btn-lg btn-block" data-toggle="modal" data-target="#schoolModal" dusk="create-school-button">
-    + @lang('Create School')
+    + @lang('Crear escuela')
 </button>
 
 <!-- Modal -->
